@@ -1,0 +1,22 @@
+﻿这两个例子用来演示自动判断的两种模式。
+
+01_纯增量_append
+  源文件只包含模组自己新增的 CraftingTemplate（不掺 Native 内容）。
+  工具判断为「纯增量插入」，直接在根节点末尾追加。
+  输入 4 个模板 -> 生成补丁追加 4 个。
+
+02_完整拷贝_diff
+  源文件是从 Native 完整复制后加料的大文件（这是老模组最常见的形态，151 KB）。
+  给 OneHandedSword 加了 3 个 UsablePiece、改了 modifier_group 属性。
+  工具判断为「与 Native 比对」，只抽出这 3 个新增件 + 1 个属性改动，
+  原生内容全部丢弃 —— 所以生成的补丁只有 1.2 KB，而不是 151 KB。
+  补丁里只有两个模板：一个匹配 UsablePieces 容器追加子项，
+  一个匹配 CraftingTemplate 本身追加属性。
+
+跑一遍看效果（在本目录下执行）：
+  python make_products.py               查看批量转换与报告生成
+  python -c "import deep_verify"        深度比对验证库
+
+两个例子的产物都通过深度比对：
+  01 -> Native 12 个，覆盖 0 个 / 新增 4 个，全文逐节点相同
+  02 -> Native 12 个，覆盖 12 个 / 新增 0 个，全文逐节点相同

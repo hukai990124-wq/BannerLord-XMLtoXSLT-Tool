@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CraftingTemplates>
+  <CraftingTemplate id="mv_tribune_template" item_type="OneHandedWeapon" modifier_group="sword" item_holsters="sword_left_hip_3:sword_left_hip:sword_left_hip_2:sword_back" default_item_holster_position_offset="0,0,-0.1" use_weapon_as_holster_mesh="true">
+    <PieceDatas><PieceData piece_type="Blade" build_order="0" /></PieceDatas>
+    <WeaponDescriptions><WeaponDescription id="mv_tribune_description" /></WeaponDescriptions>
+    <StatsData>
+      <StatData stat_type="Weight" max_value="7.0" /><StatData stat_type="WeaponReach" max_value="300" /><StatData stat_type="ThrustSpeed" max_value="200" /><StatData stat_type="SwingSpeed" max_value="200" /><StatData stat_type="ThrustDamage" max_value="500" /><StatData stat_type="SwingDamage" max_value="500" /><StatData stat_type="Handling" max_value="200" />
+    </StatsData>
+    <UsablePieces><UsablePiece piece_id="mv_tribune_piece" /></UsablePieces>
+  </CraftingTemplate>
+  <CraftingTemplate id="mv_lictor_template" item_type="TwoHandedWeapon" modifier_group="axe" item_holsters="axe_back:axe_back_2:axe_back_3:axe_back_4" default_item_holster_position_offset="0,0,-0.65" use_weapon_as_holster_mesh="true">
+    <PieceDatas><PieceData piece_type="Blade" build_order="0" /></PieceDatas>
+    <WeaponDescriptions><WeaponDescription id="mv_lictor_description" /></WeaponDescriptions>
+    <StatsData>
+      <StatData stat_type="Weight" max_value="7.0" /><StatData stat_type="WeaponReach" max_value="300" /><StatData stat_type="ThrustSpeed" max_value="200" /><StatData stat_type="SwingSpeed" max_value="200" /><StatData stat_type="ThrustDamage" max_value="500" /><StatData stat_type="SwingDamage" max_value="500" /><StatData stat_type="Handling" max_value="200" />
+    </StatsData>
+    <UsablePieces><UsablePiece piece_id="mv_lictor_piece" /></UsablePieces>
+  </CraftingTemplate>
+  <CraftingTemplate id="mv_dominus_template" item_type="Polearm" modifier_group="polearm" item_holsters="polearm_back:polearm_back_2:polearm_back_3:polearm_back_4" default_item_holster_position_offset="0,0,-0.65" use_weapon_as_holster_mesh="true">
+    <PieceDatas><PieceData piece_type="Blade" build_order="0" /></PieceDatas>
+    <WeaponDescriptions><WeaponDescription id="mv_dominus_description" /></WeaponDescriptions>
+    <StatsData>
+      <StatData stat_type="Weight" max_value="7.0" /><StatData stat_type="WeaponReach" max_value="300" /><StatData stat_type="ThrustSpeed" max_value="200" /><StatData stat_type="SwingSpeed" max_value="200" /><StatData stat_type="ThrustDamage" max_value="500" /><StatData stat_type="SwingDamage" max_value="500" /><StatData stat_type="Handling" max_value="200" />
+    </StatsData>
+    <UsablePieces><UsablePiece piece_id="mv_dominus_piece" /></UsablePieces>
+  </CraftingTemplate>
+  <CraftingTemplate id="mv_domina_template" item_type="Polearm" modifier_group="polearm" item_holsters="polearm_back:polearm_back_2:polearm_back_3:polearm_back_4" default_item_holster_position_offset="0,0,-0.65" use_weapon_as_holster_mesh="true">
+    <PieceDatas><PieceData piece_type="Blade" build_order="0" /></PieceDatas>
+    <WeaponDescriptions>
+      <WeaponDescription id="mv_domina_one_handed_description" />
+      <WeaponDescription id="mv_domina_two_handed_description" />
+      <WeaponDescription id="mv_domina_couchable_description" />
+    </WeaponDescriptions>
+    <StatsData weapon_description="mv_domina_one_handed_description">
+      <StatData stat_type="Weight" max_value="7.0" /><StatData stat_type="WeaponReach" max_value="300" /><StatData stat_type="ThrustSpeed" max_value="200" /><StatData stat_type="SwingSpeed" max_value="200" /><StatData stat_type="ThrustDamage" max_value="500" /><StatData stat_type="SwingDamage" max_value="500" /><StatData stat_type="Handling" max_value="200" />
+    </StatsData>
+    <StatsData weapon_description="mv_domina_two_handed_description">
+      <StatData stat_type="Weight" max_value="7.0" /><StatData stat_type="WeaponReach" max_value="300" /><StatData stat_type="ThrustSpeed" max_value="200" /><StatData stat_type="SwingSpeed" max_value="200" /><StatData stat_type="ThrustDamage" max_value="500" /><StatData stat_type="SwingDamage" max_value="500" /><StatData stat_type="Handling" max_value="200" />
+    </StatsData>
+    <StatsData weapon_description="mv_domina_couchable_description">
+      <StatData stat_type="Weight" max_value="7.0" /><StatData stat_type="WeaponReach" max_value="300" /><StatData stat_type="ThrustSpeed" max_value="200" /><StatData stat_type="SwingSpeed" max_value="200" /><StatData stat_type="ThrustDamage" max_value="500" /><StatData stat_type="SwingDamage" max_value="500" /><StatData stat_type="Handling" max_value="200" />
+    </StatsData>
+    <UsablePieces><UsablePiece piece_id="mv_domina_piece" /></UsablePieces>
+  </CraftingTemplate>
+</CraftingTemplates>

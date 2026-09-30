@@ -1,0 +1,8 @@
+﻿  <XmlNode>
+    <XmlName id="CraftingTemplates" path="XSLT/mv_rome_crafting_templates" />
+    <IncludedGameTypes>
+      <GameType value="Campaign" />
+      <GameType value="CampaignStoryMode" />
+      <GameType value="CustomGame" />
+    </IncludedGameTypes>
+  </XmlNode>
